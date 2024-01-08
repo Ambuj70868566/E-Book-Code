@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="logins.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <form action="https://script.google.com/macros/s/AKfycbx13dCA0eMdaiGuYZd4uQn0H4yM_uMIMNbD4fG7Ppfy8pn3y1G878nwa_bU-Ge97w8p0g/exec">
+    <div class="form">
+        <h1>Welcome to E-BOOK site please Login </h1>
+        <input type="email" id="email" placeholder="enter user email...">
+        <div class="otpverify">
+            <input type="number" id="otp_inp" placeholder="Enter otp sent your mail">
+            <button class="btn" id="otp-btn" >verify</button>
+        </div>
+        <button class="btn" onclick="sendOTP()">Send OTP</button>
+
+    </div>
+</form>
+    <script src="logins.js"></script>
+</body>
+</html>

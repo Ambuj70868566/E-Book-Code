@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+form{
+    width: 350px;
+    padding: 30px 15px 15px 15px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+  input[type="text"]{
+    font-family: sans-serif;
+    width: 100%;
+    font-size: 36px;
+    padding: 5px;
+    height: 70px;
+    background-color: rgb(241, 241, 241);
+    text-overflow: ellipsis;
+    text-align: right;
+
+  }
+  hr{
+    margin: 15px 0;
+    background-color: silver;
+  }
+  form .onOffBtn{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  form .onOffBtn input{
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10%;
+    background-color: red;
+    box-shadow: 2px 2px 8px rgb(136, 129, 129),inset -2px -2px 6px black;
+    cursor: pointer;
+  }
+  form .onOffBtn .onBtn{
+    background-color: #535cf1;
+  }
+  form .onOffBtn .offBtn:active{
+    font-size: 13px;
+
+  }
+  .onOffBtn .offBtn:active,
+  .onOffBtn .onBtn:active{
+    box-shadow: inset 2px 2px 8px rgb(0, 0, 0),
+    inset -2px -2px 6px rgb(0, 0, 0);
+
+  }
+ form .numOpeBtn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+
+ }
+ form .numOpeBtn input{
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px; 
+ }
+ form .numOpeBtn input:hover{
+    color: rgb(37, 255, 255);   
+ }
+ form .numOpeBtn .ope{
+    background-color: rgba(10, 41, 10, 0.925);
+ }
+ form .numOpeBtn .clear{
+    background-color: #690505;
+ }
+ form .numOpeBtn .blueBtn{
+    background-color: #01012e;
+ }
+
+.image{
+  position: absolute;
+  top: 185px;
+  left: 730px;
+}
+.image img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+}

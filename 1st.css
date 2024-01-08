@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    /* background-image: url(awq.jpg); */
+    /* background-size: auto;
+    background-position: center; */
+    background-color: #145DA0;
+   
+}
+   /* .flip-container {
+    perspective: 100px;
+    left:0;
+   
+   }
+   
+   .flipper {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+   }
+   
+   .front, .back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    backface-visibility: hidden;
+    margin-left: -320px;
+   }
+   
+   .back {
+    transform: rotateY(180deg);
+   }
+   
+   .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+   } */
+
+
+.menu-bar{
+    /* background-image: url(bg.jpeg.jpg);
+    background-size: cover; */
+    background-color: #2E8BC0;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding:5px;
+    transition: all .3s ease;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    line-height: 5px;
+    font-size: large;
+    transition: .3s ease;
+    color: white;
+}
+ .menu-bar ul li:hover{
+    background: rgba(97, 214, 97,.7);
+    border-radius: 5px;
+}
+.menu-bar{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1{
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top:6px;
+    margin-left: -1px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color: red;
+transition: 1s;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hoverme:hover .sub-menu-2{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    margin-top: -50px;
+    margin-left: 135px;
+    background: rgba(0,0,100,1);
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border: 2px solid black;
+    height: 80px;
+    width: 100%;
+    color: #122620;
+    text-align: center;
+    font-size: larger;
+    background-color: #D6AD60;
+   /* background-image: url(bg.jpeg.jpg); */
+}
+.footer a{
+    text-decoration: none;
+}
+.xyz{
+    z-index: 900;
+}
+
+.a1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+    background-color: #145DA0;
+    overflow: hidden;
+}
+.alled{
+    background-color: #0C2D48;
+    color: #fff;
+}
+.advanced{
+    background-color: #0C2D48;
+    height: 100vh;
+    width: 100%;
+}
+#top{
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.card{
+    height: 200px;
+    width: 200px;
+  
+    border: 2px solid black;
+    display: grid;
+    flex-direction: row;
+    background-color: #145DA0;
+   
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px green;
+    transition: 1s;
+}
+.card img{
+    width: 100%;
+    height: 100px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.desc{
+    padding: 0 2px 0 2px;
+}
+.card:hover{
+    box-shadow: 4px 8px 16px green;
+transform: scale(1.05);
+}
+
+.login{
+    height: 300px;
+    width: 80px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:0px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 999;
+    font-size: 18px;
+    text-align: center;
+
+}
+.login ul{
+    list-style: none;
+
+}
+.login ul li{
+    font-size: 1.5rem;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.login ul li i{
+    padding: 10px;
+    justify-content: space-evenly;
+}

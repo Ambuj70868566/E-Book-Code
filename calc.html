@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+<div class="image">
+  <img src="E-Book img/e.png" alt="An engineer working on a computer"/>
+</div>
+
+<section class="container">
+  <form action="#" name="calculator">
+    <input type="text" name="screen" id="scr" placeholder="0" disabled>
+    <hr>
+    
+    <div class="onOffBtn">
+      <input type="button" value="OFF" class="offBtn" onclick="s_off()">
+      <input type="button" value="ON" class="onBtn" onclick="s_on()">
+    </div>
+
+    <div class="numOpeBtn">
+      <input type="button" value="C" class="clear button" onclick="calculator.screen.value = '' ">
+      <input type="button" value="CE" class="clear button" onclick="calculator.screen.value =calculator.screen.value.slice(0,-1)  ">
+      <input type="button" value="x!" class="blueBtn ope button" onclick="factorial()">
+      <input type="button" value="&plusmn;" class="blueBtn blueBtn ope button" onclick="negate()">
+
+      <input type="button" value="x&#xb2" class="blueBtn ope button" onclick="calculator.screen.value=Math.pow(calculator.screen.value,2)">
+
+      <input type="button" value="Mod" class="blueBtn ope button">
+      <input type="button" value="Abs" class="blueBtn ope button"onclick="calculator.screen.value = Math.abs(calculator.screen.value)">
+      <input type="button" value="%" class="ope button" onclick="percentage()">
+
+      <input type="button" value="7" class="button" onclick="calculator.screen.value += '7' ">
+      <input type="button" value="8" class="button" onclick="calculator.screen.value += '8' ">
+      <input type="button" value="9" class="button" onclick="calculator.screen.value += '9' ">
+      <input type="button" value="&divide;" class=" ope button" onclick="calculator.screen.value += '/' ">
+
+      <input type="button" value="4" class="button" onclick="calculator.screen.value += '4' ">
+      <input type="button" value="5" class="button" onclick="calculator.screen.value += '5' ">
+      <input type="button" value="6" class="button" onclick="calculator.screen.value += '6' ">
+      <input type="button" value="&times;" class=" ope button"onclick="calculator.screen.value += '*' ">
+
+      <input type="button" value="1" class="button" onclick="calculator.screen.value += '1' ">
+      <input type="button" value="2" class="button" onclick="calculator.screen.value += '2' ">
+      <input type="button" value="3" class="button" onclick="calculator.screen.value += '3' ">
+      <input type="button" value="&ndash;" class="ope button"onclick="calculator.screen.value += '-' ">
+
+      <input type="button" value="." class="button" onclick="calculator.screen.value += '.' ">
+      <input type="button" value="0" class="button"onclick="calculator.screen.value += '0' ">
+      <input type="button" value="00" class="button"onclick="calculator.screen.value += '00' ">
+      <input type="button" value="+" class="ope button"onclick="calculator.screen.value += '+' ">
+
+      <input type="button" value="(" class="blueBtn button"onclick="calculator.screen.value += '(' ">
+      <input type="button" value=")" class="blueBtn button"onclick="calculator.screen.value += ')' ">
+      <input type="button" value="&radic;" class="button" onclick="calculator.screen.value = Math.sqrt(calculator.screen.value)">
+      <input type="button" value="=" class="ope button" onclick="equal()">
+
+    </div>
+  </form>
+</section>
+
+  <script src="calc.js"></script>
+</body>
+</html> 
